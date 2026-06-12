@@ -7,6 +7,7 @@ import Home from "@/pages/Home";
 import { useEffect } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ function App() {
           </WouterRouter>
         )}
         <Toaster />
+        <Analytics />
       </TooltipProvider>
     </QueryClientProvider>
   );
